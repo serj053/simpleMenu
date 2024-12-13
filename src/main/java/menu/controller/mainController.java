@@ -1,21 +1,19 @@
 package menu.controller;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import menu.Main;
 
 public class mainController {
 
     public void itemRandom0(ActionEvent actionEvent) {
-        System.out.println("Show random0");
+        Main.setPane(0);
     }
 
     public void itemRandom1(ActionEvent actionEvent) {
-        System.out.println("Show random1");
+        Main.setPane(1);
     }
 
     public void itemRandom2(ActionEvent actionEvent) {
-        System.out.println("Show random2");
-
+        Main.setPane(2);
     }
 }
