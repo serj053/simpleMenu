@@ -16,10 +16,10 @@ import java.util.List;
 import java.util.Objects;
 
 public class Main extends Application {
-    private static List<AnchorPane> anchorPane = new ArrayList<>();
-    private static BorderPane node;
+    private static final List<AnchorPane> anchorPane = new ArrayList<>();//хранит структуры
+    private static BorderPane node;//список узлов внутри главного окна
 
-    public static void setPane(int idWindow) {
+    public static void setPane(int idWindow) {//выбираем окно из коллекции
         node.setCenter(anchorPane.get(idWindow));
     }
 
